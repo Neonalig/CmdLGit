@@ -1,17 +1,21 @@
 # CmdLgit
+> A child of [CmdUtils](../../../CmdUtils/).
+
 Appends specific arguments to supplied git commands to support verbose logging and pretty formated displays.
 
 ## Usage
 `> lgit [command]`
+
 **Example #1:** `> lgit add .`
-The above example will attempt to execute `git add . --verbose --dry-run`, and if either parameter is invalid for the command, then it will try again without the parameter that was invalid. This is useful in allowing the user to automatically display verbose logging information without having to explicitly mention them.
+<br/>The above example will attempt to execute `git add . --verbose --dry-run`, and if either parameter is invalid for the command, then it will try again without the parameter that was invalid. This is useful in allowing the user to automatically display verbose logging information without having to explicitly mention them.
+
 **Example #2:** `> lgit log -n 5`
-Log commands have different parameters to default to a paginated, formatted tree display.
-The above example will attempt to execute `log --oneline --graph --color --all --decorate -n 5`.
+<br/>Log commands have different parameters to default to a paginated, formatted tree display.
+<br/>The above example will attempt to execute `log --oneline --graph --color --all --decorate -n 5`.
 
 ## Installation
 Get the [latest release](../../releases/latest) from the [Releases](../../releases) tab, and extract the `LGit.exe` executable to a known location.
-This location must then be [added to the PATH environment variable](adding-the-program-to-path).
+<br/>This location must then be [added to the PATH environment variable](adding-the-program-to-path).
 
 ## Manual Installation
 1. Clone this repository using your preferred method (`git clone`, [GitHub Desktop](https://desktop.github.com/), [GitKraken](https://gitkraken.com/), and so on...)
